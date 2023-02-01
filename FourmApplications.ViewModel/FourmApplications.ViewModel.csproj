@@ -67,12 +67,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\FourmApplication.ServiceLayer\FourmApplication.ServiceLayer.csproj">
-      <Project>{f75b2de1-0da7-429f-9237-a388f7e09482}</Project>
-      <Name>FourmApplication.ServiceLayer</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>

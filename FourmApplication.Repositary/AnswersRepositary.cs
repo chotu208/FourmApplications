@@ -32,6 +32,11 @@ namespace FourmApplication.Repositary
             _dbContext.SaveChanges();
         }
 
+        public void DeleteAnswer(int a)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Answers> GetAnswerByAnswerID(int aid)
         {
             return  _dbContext.Answers.Where(x => x.AnswerID == aid).ToList();

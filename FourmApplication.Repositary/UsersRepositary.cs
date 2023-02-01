@@ -31,6 +31,11 @@ namespace FourmApplication.Repositary
             _dbContext.SaveChanges();    
         }
 
+        public void DeleteUser(int uid)
+        {
+            throw new NotImplementedException();
+        }
+
         public int GetLatestUserId()
         {
           Users u = _dbContext.Users.OrderByDescending(x => x.UserID).Take(1).FirstOrDefault();
