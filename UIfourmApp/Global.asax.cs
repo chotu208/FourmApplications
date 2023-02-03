@@ -17,6 +17,7 @@ namespace UIfourmApp
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
             BundleConfig.RegisterBundle(BundleTable.Bundles);
+            UnityConfig.RegisterComponents();   
         }
     }
 }

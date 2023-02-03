@@ -14,6 +14,7 @@ namespace UIfourmApp.App_Start
                 "~/Scripts/umd/popper.js","~/Scripts/bootstrap.css"));
 
             bundles.Add(new StyleBundle("~/Styles/bootstrap").Include("~/Content/bootstarp.css"));
+            bundles.Add(new StyleBundle("~/Styles/MyStyles").Include("~/Content/MyStyles.css"));
 
             BundleTable.EnableOptimizations = true;
         }

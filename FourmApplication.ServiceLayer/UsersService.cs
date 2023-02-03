@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace FourmApplication.ServiceLayer
 {
 
-    public interface Iservice
+    public interface IUsersservice
     {
         int InsertUser(RegisterViewModel rvm);
         void UpdateUserDetails(EditUserDetailsViewModel evm);
@@ -22,7 +22,7 @@ namespace FourmApplication.ServiceLayer
         UserViewModel GetUserByEmailAndPassword(string email, string password);
         UserViewModel GetUserByEmail(string email);
     }
-    public class UsersService : Iservice
+    public class UsersService : IUsersservice
     {
         UsersRepositary _ur;
         public UsersService()
@@ -134,7 +134,7 @@ namespace FourmApplication.ServiceLayer
             _ur.UpdatePassword(u);
         }
 
-        UserViewModel Iservice.GetUserByEmailAndPassword(string email, string password)
+        UserViewModel IUsersservice.GetUserByEmailAndPassword(string email, string password)
         {
             throw new NotImplementedException();
         }
