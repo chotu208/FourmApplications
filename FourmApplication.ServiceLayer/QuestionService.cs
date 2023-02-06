@@ -49,7 +49,7 @@ namespace FourmApplication.ServiceLayer
 
             public List<QuestionViewModel> GetQuestions()
             {
-                List<Questions> list = new List<Questions>();
+                List<Questions> list = _qr.GetQuestions();
                 var config = new MapperConfiguration(cfg =>
                 {
                     cfg.CreateMap<Questions, QuestionViewModel>();

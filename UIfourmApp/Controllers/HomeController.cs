@@ -18,8 +18,33 @@ namespace UIfourmApp.Controllers
 
         public ActionResult Index()
         {
-            List<QuestionViewModel> questions = this._qr.GetQuestions();  
-            return View(questions); 
+            //var qus = this._qr.GetQuestions().ToList();
+            return View();
         }
+        public ActionResult About()
+        {
+            return View();
+        }
+        public ActionResult Contact()
+        {
+            return View();
+        }
+        public ActionResult Blogs()
+        {
+            return View();
+        }
+        public ActionResult Questions()
+        {
+            var qus = this._qr.GetQuestions().ToList();
+            return View(qus);
+            
+        }
+        public ActionResult Login()
+        {
+            return View();
+        }
+      
+
+
     }
 }
