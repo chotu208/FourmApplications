@@ -41,10 +41,10 @@
                         @if (Session["CurrentUserName"] == null)
                         {
                             <li class="nav-item">
-                                <a class="nav-link" href="Home/Login">Login</a>
+                                <a class="nav-link" href="Account/Login">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Home/Register">Register</a>
+                                <a class="nav-link" href="Account/Register">Register</a>
                             </li>
                         }
                         @if (Session["CurrentUserName"] != null)
@@ -55,10 +55,10 @@
                                     <img src="~/Images/userpic.png" width="20px" style="border-radius:9px;" />
                                 </a>
                                 <div class="dropdown-menu show" data-bs-popper="static">
-                                    <a class="dropdown-item" href="/Home/ChangeProfile">Change Profile</a>
-                                    <a class="dropdown-item" href="/Home/ChangePassword">Change Password</a>
+                                    <a class="dropdown-item" href="/Account/ChangeProfile">Change Profile</a>
+                                    <a class="dropdown-item" href="/Account/ChangePassword">Change Password</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="/Home/Logout">Logout</a>
+                                    <a class="dropdown-item" href="/Account/Logout">Logout</a>
                                 </div>
                             </li>
                         }

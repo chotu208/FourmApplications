@@ -20,6 +20,9 @@ namespace FourmApplications.ViewModel.LoginAndRegisterViewModel
         public string ConfirmPassword { get; set; }
         [Required]
         [RegularExpression(@"[a-z A-Z]*$")]
-        public string Name { get; set; }    
+        public string Name { get; set; }
+        [Required]
+        [RegularExpression(@"^[0-9]{10}$")]
+        public string Mobile { get; set; }  
     }
 }
